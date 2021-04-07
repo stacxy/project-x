@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace project_x.Models
+namespace project_x.ViewModels
 {
-    public class AppUser : IdentityUser
+    public class AppUserViewModel
     {
         [PersonalData]
         public string Name { get; set; }
@@ -15,30 +15,21 @@ namespace project_x.Models
 
         public int Age { get; set; }
 
-        public AppUser(string name, DateTime dob)
+        public AppUserViewModel(string name, DateTime dob)
         {
             Name = name;
             DOB = dob;
         }
-        public AppUser(string name, int age)
+        public AppUserViewModel(string name, int age)
         {
             Name = name;
             Age = age;
         }
 
-        public AppUser(string name)
-        {
-            Name = name;
-        }
-
-        public AppUser() : base()
+        public AppUserViewModel()
         {
 
-        }
-
-        public override string ToString()
-        {
-            return Name;
         }
     }
 }
+

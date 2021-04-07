@@ -58,9 +58,17 @@ html {
   min-height: 100%;
 }
 
+/*body {
+   Margin bottom by footer height 
+  
+}*/
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    background-image: url('../../Images/happyPLateW.png');
+    background-size: cover;
+    background-position-y:right;
+    
+   margin-bottom: 60px;
+    /*margin: 0;*/
 }
 .footer {
   position: absolute;
