@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using project_x.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +9,9 @@ using System.Threading.Tasks;
 
 namespace project_x.Data
 {
-    public class AppDbContext : IdentityDbContext<IdentityUser>
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
+        public DbSet<AppUser> AppUsers { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
         {
