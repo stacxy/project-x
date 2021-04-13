@@ -15,6 +15,10 @@ namespace project_x.Models
 
         public int Age { get; set; }
 
+       // public List<string> Favorites { get; set; }
+
+      //  public List<RDI> NutritionInfo { get; set; } 
+
         public AppUser(string name, DateTime dob)
         {
             Name = name;
